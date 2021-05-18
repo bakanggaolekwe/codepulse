@@ -1,0 +1,723 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+html,body {
+ margin: 0;
+ padding: 0;
+ width: 100%;
+ font-family: Orbitron;
+ overflow-x: hidden;
+
+}
+
+
+
+header {
+  margin: 0;
+  padding: 0;
+  background: url('../img/background.png') no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* nav bar white logo */
+section#logo{
+  position: fixed;
+  float: left;
+  /* padding:0; */
+   width: 65px;
+  /* margin-top: 0px; */
+   margin-left: 30px;
+   margin-top: 3px;
+   /* margin-bottom: 10px; */
+  z-index: 2;
+
+}
+
+
+
+/* blue logo */
+
+#blue{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   width: 50%;
+
+   /* position: absolute; */
+
+
+}
+
+
+nav{
+  position: fixed;
+  width:100%;
+  z-index: 1;
+  
+}
+nav ul {
+  list-style: none;
+  background: rgba(2, 62, 138,0.8);
+  overflow: hidden;
+  color:#fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+
+nav.black ul {
+  background: rgba(2, 62, 138,0.8);
+}
+
+nav ul li {
+  display:inline-block;
+  /* padding: 20px; */
+  padding: 18px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+nav ul li a:hover{
+    background: rgba(32, 127, 250, 0.3);
+    padding: 10px 30px;
+    border-radius: 40px;
+    /* border-bottom: #fff; */
+
+}
+
+.menu-icon {
+  width: 100%;
+   background: rgba(2, 62, 138,0.8);
+
+  text-align: right;
+  box-sizing:border-box;
+  padding: 15px 24px;
+  cursor:pointer;
+  color:#fff;
+  display:none;
+}
+
+
+/* styling the  section heading */
+   h1 {
+      text-align: center;
+      color: rgb(53, 141, 255);
+      font-size: 32px;
+      width:100%;
+      left: 0px;
+      
+      /* margin-bottom: -3rem; */
+      margin-top: 5rem;
+      /* helps keep margin of the H1 for headings */
+      position: absolute;
+      /* Prevent it being above the Navbar during scrolling */
+      z-index: -1;
+  }
+
+
+
+/* Services Cards  */
+.container{
+  /* max-width: 960px; */
+  max-width: 70rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+.grid-3{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+
+
+}
+
+.container .card{
+ list-style: none;
+ height: 23rem;
+ margin-top:7rem;
+ background: url(../img/background.png) no-repeat 50% 50%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+ color: #fff;
+ /*  font awesome icons : to center an inline block element give its container text-align: center; */
+ text-align: center;
+
+}
+.container  ul{
+  margin-top: 2rem;
+  text-align: center;
+  
+  /* margin-left: -10px; */
+  list-style: none;
+  font-size: 18px;
+  line-height:30px;
+  padding: 0;
+
+}
+.card h3{
+  text-align: center;
+}
+/* card button */
+.card .btn{
+  display: block;
+  border: 2px solid #fff;
+  /* top and bottom */
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  /* margin-left: 1.7rem; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  border-radius: 40px;
+  text-align: center;
+}
+
+#contacts-section{
+  /* margin-top: -2rem; */
+  margin-bottom: 3rem;
+
+}
+#about-section{
+  margin-top: -2rem;
+
+}
+
+#services-section{
+  margin-top: 3rem;
+}
+
+/* Services Cards  */
+
+.grid-2{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 90vw; */
+}
+.container-1 img{
+ width: 100%;
+ margin-top: 8rem;
+ 
+ 
+}
+.container-1 p{
+ width: 90%;
+ margin-top: 13.5rem;
+ color:rgb(53, 141, 255);
+ 
+ font-size: 20px;
+
+}
+
+/* Custom scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(2, 62, 138,0.8);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(2, 62, 138,0.8);
+}
+
+/* CONTACT FORM */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  /* margin-top: 10rem; */
+}
+
+form .cf {
+ 
+  margin-top: 10rem;
+  padding: 1em;
+
+}
+form input, form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border:2px solid rgba(2, 62, 138, 0.8);
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: Orbitron;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  /* box-shadow: rgba(2, 62, 138, 0.8); */
+  resize: none;
+}
+form input:focus, form textarea:focus {
+  border: 2px solid  rgba(2, 62, 138,0.8);
+  -moz-box-shadow: 0 0px 2px rgba(2, 62, 138,0.8) !important;
+  -webkit-box-shadow: 0 0px 2px rgba(2, 62, 138,0.8) !important;
+  box-shadow: 0 0px 2px rgba(2, 62, 138,0.8) !important;
+}
+form #input-submit {
+  color: white;
+  background: rgba(2, 62, 138,0.8);
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+}
+form #input-submit:hover {
+  background-color:  rgba(53, 141, 255);
+}
+/* Place Holder styling */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(53, 141, 255,0.8);
+  font-weight: bold;
+
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgba(53, 141, 255,0.8);
+   font-weight: bold;
+
+}
+
+
+form textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+  background: none;
+}
+
+.left {
+  margin-right: 2%;
+  background: none;
+
+}
+
+/* footer-text */
+ footer{
+   
+ background: rgba(2, 62, 138);
+ padding: 1.5rem;
+ margin: 0;
+ /* height: 1.5rem; */
+
+}
+footer p{
+ text-align: center;
+ color: #fff;
+ margin: 0;
+}
+#contacts-section#footer-wave{
+  margin-top: 30rem;
+  padding: 0;
+
+}
+        
+/* Social Media icons */
+.fab {
+  padding: 10px 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+.fas {
+  padding: 10px 10px;
+  border-radius: 10px;
+
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+
+}
+ .fa-facebook {
+  background: #125688;;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  margin-right:10px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-mobile-alt{
+  background: #125688;
+  color: white;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+.fas:hover {
+    opacity: 0.7;
+}
+
+.social-media { 
+  
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+
+    
+ }
+/* Font Awesome */
+.fa{
+
+text-align: center;
+padding: 0;
+
+}
+
+
+
+
+ /* phone number icon pop up */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(2, 62, 138, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+[data-scroll] {
+  transition: opacity 1s;
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 580px) {
+  /* Menu */
+      nav ul{
+        max-height: 0px;
+        background: rgba(2, 62, 138,0.8);
+
+      }
+      nav.black ul {
+        background: rgba(2, 62, 138,0.8);
+
+      }
+      .showing{
+        max-height: 20em;
+      }
+      nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .menu-icon{
+        display: block;
+      }
+      /* logo */
+     section#logo{
+        position: fixed;
+        width: 4rem;
+        display: block;
+        padding: 0;
+        margin:5px 10px ;
+      }
+    /* CONTACT FORM */
+      .half { 
+             width: 100%;
+             float: none;
+             margin-bottom: 0;
+          } 
+          .cf:before,
+          .cf:after {
+          content: " "; 
+          /* 1 */
+         display: table;
+           /* 2 */
+          }
+
+        .cf:after {
+           clear: both;
+          }
+    
+    
+          form textarea{
+      margin-top: -10rem;
+    }
+  
+    form #input-submit {
+      font-size: 16px;
+      margin-top:-2rem ;
+      margin-bottom:3rem ;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+ 
+}
+
+@media screen and (max-width: 780px)  {
+      #logo{
+        position: fixed;
+        top: 0;
+        width: 15%;
+        height: 20%; 
+        margin-top: 7px;
+      }
+
+      /* About  Grid*/
+      .grid-2{
+        grid-gap: 10px;
+
+        grid-template-columns: 1fr;
+     
+      }
+       /* About */
+       .container-1 img {
+         width: 90%;
+         margin-top: 7rem;
+         margin-left: auto;
+         margin-right: auto;
+       }
+
+       .container-1 p {
+         width: 80%;
+         margin-top: 4rem;
+         color: rgb(53, 141, 255);
+         margin-left: auto;
+         margin-right: auto;
+          font-size: 20px;
+          
+       }
+      /* services */
+      .grid-3{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+
+      }
+      .container {
+        max-width:30rem ;
+        margin: auto;
+        overflow: hidden;
+        padding: 4rem 1rem;
+      }
+
+
+     #blue{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30%;
+      width: 100%;
+ 
+     }
+  
+
+   .social-media {
+     margin-left: 4%;
+   }
+
+   #contacts-section {
+     margin-top: -3rem;
+   }
+
+   #about-section {
+     margin-top: -2rem;
+
+   }
+
+   #services-section {
+     margin-top: -3rem;
+   }
+
+   .container .card {
+    margin-top: 4rem;
+      }
+   
+   }
+
+@media screen and (min-width:500px) and (max-width:600px) {
+ #blue {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20%;
+   width: 69%;
+   margin-bottom: 0;
+   padding: 0;
+ }
+}
+
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+
+@media screen and (min-width: 760px) and (max-width:1024px) {
+ 
+  #blue {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-top: 30%;
+    width: 69%;
+    margin-bottom: 0;
+    padding: 0;
+  }
+   .container-1 p {
+     width: 90%;
+     margin-top: 8rem;
+     
+     
+   }
+     /* Services Cards */
+     .grid-3 {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr;
+
+          }
+
+     .container {
+            max-width: 30rem;
+            margin: auto;
+            overflow: hidden;
+            padding: 4rem 1rem;
+          }
+
+     /* About us */
+     .grid-2 {
+            grid-gap: 10px;
+
+            grid-template-columns: 1fr;
+
+          }
+
+     .container-1 p {
+            width: 80%;
+            margin-top: 3rem;
+            color: rgb(53, 141, 255);
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+          }
+        .container-1 img {
+          width: 80%;
+          margin-top: 7rem;
+          margin-left: auto;
+          margin-right: auto;
+        }
+          
+  
+}
+
+/* Orientation for screen  */
+@media only screen and (orientation: landscape) {
+   
+   #blue {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 1rem;
+    width: 50%;
+  
+   }
+    /* nav bar white logo */
+   
+    nav ul li a:hover {
+      background: rgba(32, 127, 250, 0.3);
+      padding: 10px 20px;
+      border-radius: 40px;
+
+    }
+     section#logo {
+       float: left;
+       padding: 0;
+       width: 70px;
+    
+       margin:3px 10px;
+
+       
+
+     }
+}
+
+
+
+
